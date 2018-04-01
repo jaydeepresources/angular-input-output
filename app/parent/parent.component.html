@@ -1,0 +1,13 @@
+<br>
+<div class="container jumbotron text-center">
+  <h1 class=" text-primary">
+    This is a parent component
+  </h1>
+  <p class="lead text-danger">
+    Data going from Parent:
+    <strong>{{no}}</strong>
+    <button class="btn btn-primary" (click)="increase()">+</button>
+  </p>
+
+</div>
+<app-child [no]="no" (newNo)="noChange($event)"></app-child>
